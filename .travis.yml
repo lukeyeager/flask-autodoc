@@ -3,7 +3,9 @@ python:
   - "2.7"
   - "3.3"
   - "3.4"
-install: 
+sudo: required
+beta: trusty
+install:
   - pip install -r requirements.txt
-script: 
+script:
   - python -m unittest discover
